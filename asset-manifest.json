@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/EatLand/static/css/main.b44e142b.css",
+    "main.js": "/EatLand/static/js/main.22ac8318.js",
+    "static/media/swbd.jpg": "/EatLand/static/media/swbd.f5dcee1acd6601ef9445.jpg",
+    "static/media/attachment1.jpg": "/EatLand/static/media/attachment1.63cfea3ceebdce3c1365.jpg",
+    "static/media/pizza.png": "/EatLand/static/media/pizza.ad93a1548e67faefc16f.png",
+    "index.html": "/EatLand/index.html",
+    "main.b44e142b.css.map": "/EatLand/static/css/main.b44e142b.css.map",
+    "main.22ac8318.js.map": "/EatLand/static/js/main.22ac8318.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b44e142b.css",
+    "static/js/main.22ac8318.js"
+  ]
+}
