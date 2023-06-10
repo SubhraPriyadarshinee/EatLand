@@ -9,12 +9,14 @@ import {
   faFire,
   faBirthdayCake,
 } from "@fortawesome/free-solid-svg-icons";
-import { FaBeer, FaHotjar } from "react-icons/fa";
+import { FaBeer, FaHotjar,FaCocktail } from "react-icons/fa";
 import { BiDish } from "react-icons/bi";
-import { GiChickenOven, GiSadCrab, GiPopcorn } from "react-icons/gi";
-import { CiBowlNoodles, CiPizza } from "react-icons/ci";
-import { LuCupSoda, LuIceCream2 } from "react-icons/lu";
+import { GiChickenOven, GiSadCrab, GiPopcorn ,GiBoba,GiWineBottle,GiHamburger,GiSandwich,GiFruitBowl,GiIceCreamCone,GiCupcake,GiCakeSlice,GiDonut} from "react-icons/gi";
+import { CiBowlNoodles, CiPizza, CiFries } from "react-icons/ci";
+import { LuCupSoda, LuIceCream2, LuSandwich,LuSalad } from "react-icons/lu";
 import { IoFastFoodOutline } from "react-icons/io5";
+import { SiBuymeacoffee } from "react-icons/si";
+
 import Popcorn from "./Popular/popular_food_images/popcorn1.png";
 
 const Sidebar = () => {
@@ -48,40 +50,8 @@ const Sidebar = () => {
   };
 
   return (
-    <div
-      className="sidebar"
-    >
-      <Link
-        to="/"
-        id="link-0"
-        className={`sidebar-link ${activeSubMenu === 0 ? "active" : ""}`}
-        exact
-        onMouseEnter={() => handleSubMenuToggle(0)}
-        onMouseLeave={handleSubMenuClose}
-      >
-        <FaHotjar className="sidebarIcon" />
-        {/* <Popcorn/> */}
-        {/* <img src="{Popcorn}" /> */}
-
-        <span className="sidenav_title">Foods</span>
-      </Link>
-      {activeSubMenu === 0 && (
-        <div
-          className="submenu"
-          onMouseEnter={() => handleSubMenuToggle(0)}
-          onMouseLeave={handleSubMenuClose}
-          style={{ top: calculateSubMenuTop(0) }}
-        >
-          <div>
-            <Link to="/food" activeClassName="active">
-              food1
-            </Link>
-            <Link to="/food" activeClassName="active">
-              food2
-            </Link>
-          </div>
-        </div>
-      )}
+    <div className="sidebar">
+      <FaHotjar className="flames_icon" />
 
       <Link
         to="/food"
@@ -90,7 +60,7 @@ const Sidebar = () => {
         onMouseEnter={() => handleSubMenuToggle(1)}
         onMouseLeave={handleSubMenuClose}
       >
-        <IoFastFoodOutline className="sidebarIcon" />
+        <IoFastFoodOutline className="sidebarIcon io_strokeWidth " />
         <span className="sidenav_title">Foods</span>
       </Link>
       {activeSubMenu === 1 && (
@@ -147,11 +117,29 @@ const Sidebar = () => {
           style={{ top: calculateSubMenuTop(2) }}
         >
           <div>
-            <Link to="/drinks" activeClassName="active">
-              drinks1
+          <Link to="/food" activeClassName="active">
+              <div className="submenu_item">
+                <GiBoba className="submenuIcon" />
+                <div className="submenu_item_name">Boba</div>
+              </div>
             </Link>
-            <Link to="/drinks" activeClassName="active">
-              drinks2
+            <Link to="/food" activeClassName="active">
+              <div className="submenu_item">
+                <SiBuymeacoffee className="submenuIcon" />
+                <div className="submenu_item_name">Cold Coffee</div>
+              </div>
+            </Link>
+            <Link to="/food" activeClassName="active">
+              <div className="submenu_item">
+                <FaCocktail className="submenuIcon" />
+                <div className="submenu_item_name">Cocktail</div>
+              </div>
+            </Link>
+            <Link to="/food" activeClassName="active">
+              <div className="submenu_item">
+                <GiWineBottle className="submenuIcon" />
+                <div className="submenu_item_name">Wine</div>
+              </div>
             </Link>
           </div>
         </div>
@@ -164,7 +152,7 @@ const Sidebar = () => {
         onMouseEnter={() => handleSubMenuToggle(3)}
         onMouseLeave={handleSubMenuClose}
       >
-        <GiPopcorn className="sidebarIcon" />
+        <LuSandwich className="sidebarIcon" />
         <span className="sidenav_title">Snack</span>
       </Link>
       {activeSubMenu === 3 && (
@@ -175,11 +163,29 @@ const Sidebar = () => {
           style={{ top: calculateSubMenuTop(3) }}
         >
           <div>
-            <Link to="/snacks" activeClassName="active">
-              snack1
+          <Link to="/food" activeClassName="active">
+              <div className="submenu_item">
+                <GiHamburger className="submenuIcon" />
+                <div className="submenu_item_name">Burger</div>
+              </div>
             </Link>
-            <Link to="/snacks" activeClassName="active">
-              snack2
+            <Link to="/food" activeClassName="active">
+              <div className="submenu_item">
+                <GiSandwich className="submenuIcon" />
+                <div className="submenu_item_name">Sandwich</div>
+              </div>
+            </Link>
+            <Link to="/food" activeClassName="active">
+              <div className="submenu_item">
+                <CiFries className="submenuIcon" />
+                <div className="submenu_item_name">Fries</div>
+              </div>
+            </Link>
+            <Link to="/food" activeClassName="active">
+              <div className="submenu_item">
+                <GiFruitBowl className="submenuIcon" />
+                <div className="submenu_item_name">Fruit Bowl</div>
+              </div>
             </Link>
           </div>
         </div>
@@ -203,11 +209,29 @@ const Sidebar = () => {
           style={{ top: calculateSubMenuTop(4) }}
         >
           <div>
-            <Link to="/desert" activeClassName="active">
-              desert1
+          <Link to="/food" activeClassName="active">
+              <div className="submenu_item">
+                <GiDonut className="submenuIcon" />
+                <div className="submenu_item_name">Donut</div>
+              </div>
             </Link>
-            <Link to="/desert" activeClassName="active">
-              desert2
+            <Link to="/food" activeClassName="active">
+              <div className="submenu_item">
+                <GiCakeSlice className="submenuIcon" />
+                <div className="submenu_item_name">Cake Slice</div>
+              </div>
+            </Link>
+            <Link to="/food" activeClassName="active">
+              <div className="submenu_item">
+                <GiCupcake className="submenuIcon" />
+                <div className="submenu_item_name">Cup Cake</div>
+              </div>
+            </Link>
+            <Link to="/food" activeClassName="active">
+              <div className="submenu_item">
+                <GiIceCreamCone className="submenuIcon" />
+                <div className="submenu_item_name">Ice Cream</div>
+              </div>
             </Link>
           </div>
         </div>
