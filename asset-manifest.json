@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/EatLand/static/css/main.19082bce.css",
-    "main.js": "/EatLand/static/js/main.d86b4e14.js",
+    "main.js": "/EatLand/static/js/main.289b0f3d.js",
     "static/media/attachment1.jpg": "/EatLand/static/media/attachment1.63cfea3ceebdce3c1365.jpg",
     "static/media/Cream_Cheese_Pasta.jpg": "/EatLand/static/media/Cream_Cheese_Pasta.e1cd20572ad1b3743584.jpg",
     "static/media/hawaiian_pizza.jpg": "/EatLand/static/media/hawaiian_pizza.e851563c70e859eea7f1.jpg",
@@ -103,10 +103,10 @@
     "static/media/Blueberry_Maqui_Berry_Bars.jpg": "/EatLand/static/media/Blueberry_Maqui_Berry_Bars.b331872def44a426ad5b.jpg",
     "index.html": "/EatLand/index.html",
     "main.19082bce.css.map": "/EatLand/static/css/main.19082bce.css.map",
-    "main.d86b4e14.js.map": "/EatLand/static/js/main.d86b4e14.js.map"
+    "main.289b0f3d.js.map": "/EatLand/static/js/main.289b0f3d.js.map"
   },
   "entrypoints": [
     "static/css/main.19082bce.css",
-    "static/js/main.d86b4e14.js"
+    "static/js/main.289b0f3d.js"
   ]
 }
