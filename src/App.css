@@ -158,7 +158,7 @@
 }
 
 .div_foodItem_bgImage {
-  background-image: url("./Popular/popular_food_images/swbd.jpg");
+  /* background-image: url("./Popular/popular_food_images/swbd.jpg"); */
   background-color: white;
   width: 200px;
   height: 200px;
@@ -455,4 +455,17 @@ p.header_search_text {
   border-right: 2px solid #c2cbc4;
   display: flex;
     justify-content: right;
+}
+
+
+
+/* Grid  */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
+  grid-gap: 10px; /* Adjust the gap between grid items */
+}
+
+.grid-item {
+  /* Add any styling for the grid item */
 }
