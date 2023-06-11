@@ -38,7 +38,7 @@ function App() {
             <Route path="/latest" element={<Snacks />} />
             {/* <Route path="/desert" element={<Desert />} /> */}
 
-            <Route path="*" element={<NotFound />} />
+            <Route path="*" element={<Home />} />
           </Routes>
           </div>
         </div>
