@@ -8,10 +8,6 @@ import { AiOutlineScan } from "react-icons/ai";
 const Food = () => {
   return (
     <div className='FoodPage' >
-      <h1>Welcome to the Food Page</h1>
-      <p>This is the content of the Food page.</p>
-
-
       <div className='header' >
         <div className='header_text' >
           <p className='header_title'>Foods</p>

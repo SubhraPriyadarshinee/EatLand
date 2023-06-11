@@ -9,11 +9,24 @@ import {
   faFire,
   faBirthdayCake,
 } from "@fortawesome/free-solid-svg-icons";
-import { FaBeer, FaHotjar,FaCocktail } from "react-icons/fa";
+import { FaBeer, FaHotjar, FaCocktail } from "react-icons/fa";
 import { BiDish } from "react-icons/bi";
-import { GiChickenOven, GiSadCrab, GiPopcorn ,GiBoba,GiWineBottle,GiHamburger,GiSandwich,GiFruitBowl,GiIceCreamCone,GiCupcake,GiCakeSlice,GiDonut} from "react-icons/gi";
+import {
+  GiChickenOven,
+  GiSadCrab,
+  GiPopcorn,
+  GiBoba,
+  GiWineBottle,
+  GiHamburger,
+  GiSandwich,
+  GiFruitBowl,
+  GiIceCreamCone,
+  GiCupcake,
+  GiCakeSlice,
+  GiDonut,
+} from "react-icons/gi";
 import { CiBowlNoodles, CiPizza, CiFries } from "react-icons/ci";
-import { LuCupSoda, LuIceCream2, LuSandwich,LuSalad } from "react-icons/lu";
+import { LuCupSoda, LuIceCream2, LuSandwich, LuSalad } from "react-icons/lu";
 import { IoFastFoodOutline } from "react-icons/io5";
 import { SiBuymeacoffee } from "react-icons/si";
 
@@ -42,6 +55,10 @@ const Sidebar = () => {
     // }, 3000);
   };
 
+  function navToLatest(oEvent) {
+    console.log("flames icon clicked");
+  }
+
   const calculateSubMenuTop = (index) => {
     const sidebarLink = document.querySelector(`#link-${index}`);
     const sidebarLinkRect = sidebarLink.getBoundingClientRect();
@@ -51,10 +68,11 @@ const Sidebar = () => {
 
   return (
     <div className="sidebar">
-      <FaHotjar className="flames_icon" />
-
+      <Link to="/latest" className="sidebar_flames_link" >
+        <FaHotjar className="flames_icon" />
+      </Link>
       <Link
-        to="/food"
+        to="/"
         id="link-1"
         className={`sidebar-link ${activeSubMenu === 1 ? "active" : ""}`}
         onMouseEnter={() => handleSubMenuToggle(1)}
@@ -71,25 +89,25 @@ const Sidebar = () => {
           style={{ top: calculateSubMenuTop(1) }}
         >
           <div>
-            <Link to="/food" activeClassName="active">
+            <Link to="/" activeClassName="active">
               <div className="submenu_item">
                 <GiChickenOven className="submenuIcon" />
                 <div className="submenu_item_name">Chicken</div>
               </div>
             </Link>
-            <Link to="/food" activeClassName="active">
+            <Link to="/" activeClassName="active">
               <div className="submenu_item">
                 <GiSadCrab className="submenuIcon" />
                 <div className="submenu_item_name">SeaFood</div>
               </div>
             </Link>
-            <Link to="/food" activeClassName="active">
+            <Link to="/" activeClassName="active">
               <div className="submenu_item">
                 <CiPizza className="submenuIcon" />
                 <div className="submenu_item_name">Pizza</div>
               </div>
             </Link>
-            <Link to="/food" activeClassName="active">
+            <Link to="/" activeClassName="active">
               <div className="submenu_item">
                 <CiBowlNoodles className="submenuIcon" />
                 <div className="submenu_item_name">Pasta</div>
@@ -100,7 +118,7 @@ const Sidebar = () => {
       )}
 
       <Link
-        to="/drinks"
+        to="/"
         id="link-2"
         className={`sidebar-link ${activeSubMenu === 2 ? "active" : ""}`}
         onMouseEnter={() => handleSubMenuToggle(2)}
@@ -117,25 +135,25 @@ const Sidebar = () => {
           style={{ top: calculateSubMenuTop(2) }}
         >
           <div>
-          <Link to="/food" activeClassName="active">
+            <Link to="/" activeClassName="active">
               <div className="submenu_item">
                 <GiBoba className="submenuIcon" />
                 <div className="submenu_item_name">Boba</div>
               </div>
             </Link>
-            <Link to="/food" activeClassName="active">
+            <Link to="/" activeClassName="active">
               <div className="submenu_item">
                 <SiBuymeacoffee className="submenuIcon" />
                 <div className="submenu_item_name">Cold Coffee</div>
               </div>
             </Link>
-            <Link to="/food" activeClassName="active">
+            <Link to="/" activeClassName="active">
               <div className="submenu_item">
                 <FaCocktail className="submenuIcon" />
                 <div className="submenu_item_name">Cocktail</div>
               </div>
             </Link>
-            <Link to="/food" activeClassName="active">
+            <Link to="/" activeClassName="active">
               <div className="submenu_item">
                 <GiWineBottle className="submenuIcon" />
                 <div className="submenu_item_name">Wine</div>
@@ -146,7 +164,7 @@ const Sidebar = () => {
       )}
 
       <Link
-        to="/snacks"
+        to="/"
         id="link-3"
         className={`sidebar-link ${activeSubMenu === 3 ? "active" : ""}`}
         onMouseEnter={() => handleSubMenuToggle(3)}
@@ -163,25 +181,25 @@ const Sidebar = () => {
           style={{ top: calculateSubMenuTop(3) }}
         >
           <div>
-          <Link to="/food" activeClassName="active">
+            <Link to="/" activeClassName="active">
               <div className="submenu_item">
                 <GiHamburger className="submenuIcon" />
                 <div className="submenu_item_name">Burger</div>
               </div>
             </Link>
-            <Link to="/food" activeClassName="active">
+            <Link to="/" activeClassName="active">
               <div className="submenu_item">
                 <GiSandwich className="submenuIcon" />
                 <div className="submenu_item_name">Sandwich</div>
               </div>
             </Link>
-            <Link to="/food" activeClassName="active">
+            <Link to="/" activeClassName="active">
               <div className="submenu_item">
                 <CiFries className="submenuIcon" />
                 <div className="submenu_item_name">Fries</div>
               </div>
             </Link>
-            <Link to="/food" activeClassName="active">
+            <Link to="/" activeClassName="active">
               <div className="submenu_item">
                 <GiFruitBowl className="submenuIcon" />
                 <div className="submenu_item_name">Fruit Bowl</div>
@@ -192,7 +210,7 @@ const Sidebar = () => {
       )}
 
       <Link
-        to="/desert"
+        to="/"
         id="link-4"
         className={`sidebar-link ${activeSubMenu === 4 ? "active" : ""}`}
         onMouseEnter={() => handleSubMenuToggle(4)}
@@ -209,25 +227,25 @@ const Sidebar = () => {
           style={{ top: calculateSubMenuTop(4) }}
         >
           <div>
-          <Link to="/food" activeClassName="active">
+            <Link to="/" activeClassName="active">
               <div className="submenu_item">
                 <GiDonut className="submenuIcon" />
                 <div className="submenu_item_name">Donut</div>
               </div>
             </Link>
-            <Link to="/food" activeClassName="active">
+            <Link to="/" activeClassName="active">
               <div className="submenu_item">
                 <GiCakeSlice className="submenuIcon" />
                 <div className="submenu_item_name">Cake Slice</div>
               </div>
             </Link>
-            <Link to="/food" activeClassName="active">
+            <Link to="/" activeClassName="active">
               <div className="submenu_item">
                 <GiCupcake className="submenuIcon" />
                 <div className="submenu_item_name">Cup Cake</div>
               </div>
             </Link>
-            <Link to="/food" activeClassName="active">
+            <Link to="/" activeClassName="active">
               <div className="submenu_item">
                 <GiIceCreamCone className="submenuIcon" />
                 <div className="submenu_item_name">Ice Cream</div>

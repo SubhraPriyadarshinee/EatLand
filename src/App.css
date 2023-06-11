@@ -3,11 +3,46 @@
 .app_placement {
   display: flex;
 }
+.app_placement_content{
+  width: 100%;
+  background: #f4f6fa;
+  padding: 2rem;
+}
+
+.div_content{
+display: flex;
+    flex-direction: column;
+}
+.content_header{
+
+}
+.div_content_2{
+  display: flex;
+  margin: 1rem 0;
+}
+.div_content_3{
+  display: flex;
+}
+.content_foodGrid{
+  flex: 2;
+
+}
+.content_newOrder{
+  flex: 1;
+
+}
 
 .flames_icon {
   color: #ec6463;
   font-size: 2.5rem;
   margin-bottom: 1rem;
+  cursor: pointer;
+}
+.sidebar_flames_link:hover{
+  background: transparent !important;
+}
+.sidebar_flames_link{
+  justify-content: center;
 }
 
 .sidebar {
@@ -245,6 +280,7 @@
   display: flex;
   align-items: center;
   background-color: #f4f6fa;
+  padding: 0 20px;
 }
 .newOrderListIconDiv {
   flex: 1;
@@ -391,12 +427,15 @@
 
 
 /* Header   */
-.FoodPage{
+/* .FoodPage{
   width: 100%;
-}
+} */
 .header {
   display: flex;
+  background: white;
   align-items: center;
+  border-radius: 8px;
+  padding: 1rem 2.5rem;
 }
 .header_text{
 flex: 3;
@@ -434,7 +473,7 @@ padding: 0 8px;
     color: #9ba09c;
 }
 .header_title {
-  font-size: x-large;
+  font-size:xxx-large;
   font-weight: 700;
   margin-bottom: 4px;
   margin: 0 0 3px 0;
@@ -462,10 +501,51 @@ p.header_search_text {
 /* Grid  */
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
+  grid-template-columns: repeat(4, 1fr); /* Three columns with equal width */
   grid-gap: 10px; /* Adjust the gap between grid items */
 }
 
 .grid-item {
   /* Add any styling for the grid item */
+}
+
+
+.category{
+  display: flex;
+  align-items: center;
+}
+.div_category{
+  margin-right: 2rem;
+  margin-bottom: 1rem;
+}
+.category_label {
+  margin: 0;
+  font-size: smaller;
+  color: #9d9ea2;
+}
+.category_text {
+  margin: 0;
+  font-size: large;
+  font-weight: 500;
+}
+.category_icon{
+
+}
+
+.content_iconTabBar{
+  display: flex;
+}
+.itb_btn{
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+.itb_btn_icon {
+  margin-right: 0.5rem;
+  color: #ec6463;
+
+}
+.itb_btn_text{
+  color: #ec6463;
+
 }
